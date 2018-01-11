@@ -1,0 +1,4 @@
+baseURL = "http://alphanumeric.io/"
+languageCode = "en-us"
+title = "alphanumeric"
+canonifyurls = true
