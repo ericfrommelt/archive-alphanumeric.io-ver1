@@ -1,0 +1,43 @@
+$color-main: #fcfcfc;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, helvetica, sans-serif;
+  background-color: $color-main;
+  font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, helvetica, sans-serif;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.site-header {
+  margin: 6rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}

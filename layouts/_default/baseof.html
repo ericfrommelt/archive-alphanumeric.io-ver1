@@ -15,15 +15,18 @@
     <meta NAME="robots" content="noindex, nofollow">
     {{ end }}
     <title>{{ block "title" .}}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7804816/6709192/css/fonts.css" />
     <link rel="stylesheet" href='{{ .Site.BaseURL }}css/{{ index .Site.Data.css.hash "main.css"}}' type="text/css" />
     <link rel="canonical" href="" />
     <link rel="alternate" type="" />
     <script href='{{.Site.BaseURL}}js/{{ index .Site.Data.js.hash "picturefill.min.js" }}'></script>
   </head>
 </head>
-<body class={{ .Section }}>
-  {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
-  {{ block "main" . }}{{ end }}
-  {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+<body>
+  <div class="container">
+    {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+  </div>
 </body>
 </html>
